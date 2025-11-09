@@ -37,8 +37,6 @@ export default function RootLayout({
           name={config.siteName}
           description={config.description}
           telephone={config.phone}
-          email={config.email}
-          address={config.address}
         />
       </head>
       <body className="antialiased min-h-screen flex flex-col">

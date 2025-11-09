@@ -22,7 +22,7 @@ interface LeadFormProps {
  * - data-netlify="true"
  * - name attribute
  * - hidden input with name="form-name" matching the form name
- * - action="/thanks" for redirect after submission
+ * - action="/thanks/" for redirect after submission
  * - honeypot field for spam protection
  */
 export function LeadForm({ formName = 'contact' }: LeadFormProps) {
@@ -30,7 +30,7 @@ export function LeadForm({ formName = 'contact' }: LeadFormProps) {
     <form
       name={formName}
       method="POST"
-      action="/thanks"
+      action="/thanks/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className="space-y-6"

@@ -56,22 +56,20 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <Section background="cloud" className="pt-32 pb-20 relative overflow-hidden">
-        {/* Subtle background pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 1px 1px, rgb(76, 111, 255) 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }} />
-        </div>
+        {/* Vibrant gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-60" />
+        <div className="absolute top-20 -left-40 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
+        <div className="absolute top-40 -right-40 w-80 h-80 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
+        <div className="absolute -bottom-20 left-1/2 w-80 h-80 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000" />
 
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <MotionReveal>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-sb-ink mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-sb-ink mb-6 leading-tight">
               {hero.headline}
             </h1>
           </MotionReveal>
           <MotionReveal delay={0.1}>
-            <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-700 mb-10 max-w-2xl mx-auto font-medium">
               {hero.subheadline}
             </p>
           </MotionReveal>

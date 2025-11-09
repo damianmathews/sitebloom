@@ -3,7 +3,7 @@ import { Section, SectionHeader } from '@/components/ui/section';
 import { LeadForm } from '@/components/lead-form';
 import { CalendlyEmbed } from '@/components/calendly-embed';
 import { Card, CardContent } from '@/components/ui/card';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import config from '@/content/config.json';
 import type { Metadata } from 'next';
 
@@ -36,53 +36,23 @@ export default function ContactPage() {
           <div className="space-y-8">
             {/* Contact Information */}
             <Card className="rounded-3xl border-sb-line shadow-lg">
-              <CardContent className="p-8 space-y-6">
+              <CardContent className="p-8">
                 <h2 className="text-2xl font-bold text-sb-ink mb-6">Get in touch</h2>
 
-                <div className="space-y-4">
-                  <a
-                    href={`tel:${config.phone}`}
-                    className="flex items-center gap-4 p-4 rounded-xl bg-sb-cloud hover:bg-sb-sand transition-colors group"
-                  >
-                    <div className="p-3 bg-sb-iris rounded-lg">
-                      <Phone className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <div className="text-sm text-gray-600">Call us</div>
-                      <div className="font-semibold text-sb-ink group-hover:text-sb-iris transition-colors">
-                        {config.phone}
-                      </div>
-                    </div>
-                  </a>
-
-                  <a
-                    href={`mailto:${config.email}`}
-                    className="flex items-center gap-4 p-4 rounded-xl bg-sb-cloud hover:bg-sb-sand transition-colors group"
-                  >
-                    <div className="p-3 bg-sb-mint rounded-lg">
-                      <Mail className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <div className="text-sm text-gray-600">Email us</div>
-                      <div className="font-semibold text-sb-ink group-hover:text-sb-iris transition-colors break-all">
-                        {config.email}
-                      </div>
-                    </div>
-                  </a>
-
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-sb-cloud">
-                    <div className="p-3 bg-sb-line rounded-lg">
-                      <MapPin className="h-5 w-5 text-sb-ink" />
-                    </div>
-                    <div>
-                      <div className="text-sm text-gray-600 mb-1">Location</div>
-                      <div className="font-semibold text-sb-ink">
-                        {config.address.street}<br />
-                        {config.address.city}, {config.address.region} {config.address.postalCode}
-                      </div>
+                <a
+                  href={`tel:${config.phone}`}
+                  className="flex items-center gap-4 p-4 rounded-xl bg-sb-cloud hover:bg-sb-sand transition-colors group"
+                >
+                  <div className="p-3 bg-sb-iris rounded-lg">
+                    <Phone className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-gray-600">Call us</div>
+                    <div className="font-semibold text-sb-ink group-hover:text-sb-iris transition-colors">
+                      {config.phone}
                     </div>
                   </div>
-                </div>
+                </a>
               </CardContent>
             </Card>
 

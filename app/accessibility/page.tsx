@@ -76,7 +76,7 @@ export default function AccessibilityPage() {
               <h3 className="text-xl font-bold text-sb-ink mb-4">Report Accessibility Issues</h3>
               <p className="text-gray-700 mb-6">{feedback}</p>
               <a
-                href={`mailto:${config.email}`}
+                href="/contact"
                 className="inline-block bg-sb-iris text-white font-semibold px-6 py-3 rounded-xl hover:bg-sb-iris/90 transition-colors"
               >
                 Contact us

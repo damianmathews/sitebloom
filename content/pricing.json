@@ -3,39 +3,21 @@
   "subheadline": "No surprises. Cancel anytime.",
   "tiers": [
     {
-      "id": "starter",
-      "name": "Starter",
-      "description": "Perfect for solo operators and new businesses",
-      "price": "$149",
+      "id": "standard",
+      "name": "Standard",
+      "description": "Great for established local businesses",
+      "price": "$15",
       "period": "/month",
-      "setupFee": "$499 setup",
+      "setupFee": "$100 upfront",
       "features": [
-        "1 page website",
+        "Up to 5 pages",
         "Contact form",
-        "Google Maps embed",
         "Calendly booking widget",
         "Mobile responsive",
         "Basic SEO setup",
         "SSL certificate",
-        "Lite monthly updates"
-      ],
-      "cta": "Get Started",
-      "popular": false
-    },
-    {
-      "id": "standard",
-      "name": "Standard",
-      "description": "Great for established local businesses",
-      "price": "$249",
-      "period": "/month",
-      "setupFee": "$799 setup",
-      "features": [
-        "Up to 5 pages",
-        "Blog/News section",
         "Photo galleries",
         "FAQ section",
-        "All Starter features",
-        "Service area pages",
         "Standard monthly updates",
         "Priority support"
       ],
@@ -46,27 +28,25 @@
       "id": "pro",
       "name": "Pro",
       "description": "For businesses ready to scale",
-      "price": "$399",
+      "price": "$30",
       "period": "/month",
-      "setupFee": "$1,199 setup",
+      "setupFee": "$400 upfront",
       "features": [
         "Up to 10 pages",
+        "Everything in Standard",
+        "Blog/News section",
         "Lead magnet forms",
         "Review showcase area",
-        "Quarterly strategy calls",
-        "All Standard features",
+        "Service area pages",
         "Advanced SEO",
         "Custom integrations",
+        "Quarterly strategy calls",
         "White-glove support"
       ],
       "cta": "Get Started",
       "popular": false
     }
   ],
-  "faqTeaser": {
-    "question": "Do I keep the site if I cancel?",
-    "answer": "We'll work with you on transition options. Contact us to discuss your specific situation."
-  },
   "comparison": {
     "categories": [
       {
@@ -74,19 +54,16 @@
         "features": [
           {
             "name": "Number of pages",
-            "starter": "1",
             "standard": "Up to 5",
             "pro": "Up to 10"
           },
           {
             "name": "Blog/News",
-            "starter": false,
-            "standard": true,
+            "standard": false,
             "pro": true
           },
           {
             "name": "Photo galleries",
-            "starter": false,
             "standard": true,
             "pro": true
           }
@@ -97,19 +74,16 @@
         "features": [
           {
             "name": "Contact form",
-            "starter": true,
             "standard": true,
             "pro": true
           },
           {
             "name": "Calendly booking",
-            "starter": true,
             "standard": true,
             "pro": true
           },
           {
             "name": "Lead magnets",
-            "starter": false,
             "standard": false,
             "pro": true
           }
@@ -120,13 +94,11 @@
         "features": [
           {
             "name": "Monthly updates",
-            "starter": "Lite",
             "standard": "Standard",
             "pro": "Premium"
           },
           {
             "name": "Strategy calls",
-            "starter": false,
             "standard": false,
             "pro": "Quarterly"
           }
