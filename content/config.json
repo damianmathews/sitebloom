@@ -1,0 +1,36 @@
+{
+  "siteName": "SiteBloom",
+  "tagline": "Websites that book jobs.",
+  "description": "SiteBloom builds fast, clean sites that help local businesses get more calls and bookings.",
+  "phone": "(555) 123-4567",
+  "email": "hello@sitebloom.example",
+  "serviceAreas": ["Your City", "Neighboring City", "Service Area 3"],
+  "calendlyUrl": "https://calendly.com/your-link",
+  "plausibleDomain": "sitebloom.example",
+  "address": {
+    "street": "123 Main Street",
+    "city": "Your City",
+    "region": "ST",
+    "postalCode": "12345",
+    "country": "US"
+  },
+  "social": {
+    "facebook": "https://facebook.com/sitebloom",
+    "instagram": "https://instagram.com/sitebloom",
+    "linkedin": "https://linkedin.com/company/sitebloom"
+  },
+  "businessHours": {
+    "monday": "9:00 AM - 5:00 PM",
+    "tuesday": "9:00 AM - 5:00 PM",
+    "wednesday": "9:00 AM - 5:00 PM",
+    "thursday": "9:00 AM - 5:00 PM",
+    "friday": "9:00 AM - 5:00 PM",
+    "saturday": "Closed",
+    "sunday": "Closed"
+  },
+  "features": {
+    "localBusinessSchema": true,
+    "calendlyPopup": true,
+    "buildTarget": "48-72 hours"
+  }
+}

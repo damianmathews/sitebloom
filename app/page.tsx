@@ -1,65 +1,181 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import React from 'react';
+import { Section, SectionHeader } from '@/components/ui/section';
+import { PrimaryCTA, SecondaryCTA } from '@/components/ui/cta-buttons';
+import { FeatureCard, IconBadge, Step } from '@/components/ui/feature-card';
+import { MotionReveal } from '@/components/ui/motion-reveal';
+import {
+  Wrench,
+  Zap,
+  Wind,
+  Home,
+  TreeDeciduous,
+  Paintbrush,
+  Truck,
+  Bug,
+  Smartphone,
+  CalendarCheck,
+  RefreshCw,
+  ShieldCheck,
+  Search,
+  Palette,
+  Mail,
+  Calendar,
+  MapPin,
+  Lock,
+} from 'lucide-react';
+import copy from '@/content/copy.json';
+
+export default function HomePage() {
+  const { hero, whoWeHelp, benefits, howItWorks, whatYouGet, finalCta } = copy.home;
+
+  // Map icon names to components
+  const iconMap: Record<string, any> = {
+    wrench: Wrench,
+    zap: Zap,
+    wind: Wind,
+    home: Home,
+    'tree-deciduous': TreeDeciduous,
+    paintbrush: Paintbrush,
+    truck: Truck,
+    bug: Bug,
+    smartphone: Smartphone,
+    'calendar-check': CalendarCheck,
+    'refresh-cw': RefreshCw,
+    'shield-check': ShieldCheck,
+    search: Search,
+    palette: Palette,
+    mail: Mail,
+    calendar: Calendar,
+    'map-pin': MapPin,
+    lock: Lock,
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      {/* Hero Section */}
+      <Section background="cloud" className="pt-32 pb-20 relative overflow-hidden">
+        {/* Subtle background pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'radial-gradient(circle at 1px 1px, rgb(76, 111, 255) 1px, transparent 0)',
+            backgroundSize: '40px 40px',
+          }} />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+
+        <div className="relative z-10 text-center max-w-4xl mx-auto">
+          <MotionReveal>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-sb-ink mb-6">
+              {hero.headline}
+            </h1>
+          </MotionReveal>
+          <MotionReveal delay={0.1}>
+            <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto">
+              {hero.subheadline}
+            </p>
+          </MotionReveal>
+          <MotionReveal delay={0.2}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <PrimaryCTA href="/contact" icon>
+                {hero.primaryCta}
+              </PrimaryCTA>
+              <SecondaryCTA href="/pricing">
+                {hero.secondaryCta}
+              </SecondaryCTA>
+            </div>
+          </MotionReveal>
+        </div>
+      </Section>
+
+      {/* Who We Help Section */}
+      <Section background="white">
+        <SectionHeader headline={whoWeHelp.headline} />
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+          {whoWeHelp.services.map((service, index) => (
+            <IconBadge
+              key={index}
+              icon={iconMap[service.icon]}
+              label={service.name}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          ))}
         </div>
-      </main>
-    </div>
+      </Section>
+
+      {/* Benefits Section */}
+      <Section background="sand">
+        <SectionHeader
+          headline={benefits.headline}
+        />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {benefits.cards.map((benefit, index) => (
+            <FeatureCard
+              key={index}
+              title={benefit.title}
+              description={benefit.description}
+              icon={iconMap[benefit.icon]}
+              index={index}
+            />
+          ))}
+        </div>
+      </Section>
+
+      {/* How It Works Section */}
+      <Section background="white">
+        <SectionHeader
+          headline={howItWorks.headline}
+        />
+        <div className="max-w-3xl mx-auto space-y-12">
+          {howItWorks.steps.map((step, index) => (
+            <Step
+              key={index}
+              number={step.number}
+              title={step.title}
+              description={step.description}
+              index={index}
+            />
+          ))}
+        </div>
+      </Section>
+
+      {/* What You Get Section */}
+      <Section background="cloud">
+        <SectionHeader headline={whatYouGet.headline} />
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {whatYouGet.features.map((feature, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center text-center gap-3 p-6 bg-white rounded-2xl border border-sb-line hover:border-sb-iris transition-colors"
+            >
+              {React.createElement(iconMap[feature.icon], {
+                className: 'h-8 w-8 text-sb-iris',
+              })}
+              <span className="font-medium text-sb-ink">{feature.name}</span>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Final CTA Section */}
+      <Section background="sand" className="text-center">
+        <div className="max-w-2xl mx-auto">
+          <MotionReveal>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-sb-ink mb-6">
+              {finalCta.headline}
+            </h2>
+          </MotionReveal>
+          <MotionReveal delay={0.1}>
+            <p className="text-xl text-gray-600 mb-10">
+              {finalCta.subheadline}
+            </p>
+          </MotionReveal>
+          <MotionReveal delay={0.2}>
+            <PrimaryCTA href="/contact" icon>
+              {finalCta.cta}
+            </PrimaryCTA>
+          </MotionReveal>
+        </div>
+      </Section>
+    </>
   );
 }

@@ -1,0 +1,278 @@
+{
+  "home": {
+    "hero": {
+      "headline": "Websites that book jobs.",
+      "subheadline": "SiteBloom builds fast, clean sites that help local businesses get more calls and bookings.",
+      "primaryCta": "Book a call",
+      "secondaryCta": "Get a price"
+    },
+    "whoWeHelp": {
+      "headline": "Built for the trades",
+      "services": [
+        { "name": "Plumber", "icon": "wrench" },
+        { "name": "Electrician", "icon": "zap" },
+        { "name": "HVAC", "icon": "wind" },
+        { "name": "Roofer", "icon": "home" },
+        { "name": "Landscaper", "icon": "tree-deciduous" },
+        { "name": "Painter", "icon": "paintbrush" },
+        { "name": "Junk Removal", "icon": "truck" },
+        { "name": "Pest Control", "icon": "bug" }
+      ]
+    },
+    "benefits": {
+      "headline": "What matters to your customers",
+      "cards": [
+        {
+          "title": "Looks legit on mobile",
+          "description": "Most customers search on their phone. Your site looks clean and loads fast on any device.",
+          "icon": "smartphone"
+        },
+        {
+          "title": "Call & book in clicks",
+          "description": "Tap to call or book right from the page. No forms to fill out unless they want to.",
+          "icon": "calendar-check"
+        },
+        {
+          "title": "We handle updates",
+          "description": "Change your hours, add a service, update photos. Send us the change and we handle it.",
+          "icon": "refresh-cw"
+        },
+        {
+          "title": "Secure & fast",
+          "description": "SSL certificate included. Lightning-fast hosting. No security headaches.",
+          "icon": "shield-check"
+        },
+        {
+          "title": "Shows up in search",
+          "description": "Basic SEO setup included: proper titles, meta tags, and structured data for local search.",
+          "icon": "search"
+        }
+      ]
+    },
+    "howItWorks": {
+      "headline": "From call to live in days",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Quick call",
+          "description": "20 minutes. We learn about your business and what you need."
+        },
+        {
+          "number": "02",
+          "title": "We build fast",
+          "description": "You send us your info and photos. We handle the rest."
+        },
+        {
+          "number": "03",
+          "title": "You get leads",
+          "description": "Go live and start getting calls and bookings from your new site."
+        }
+      ]
+    },
+    "whatYouGet": {
+      "headline": "Everything you need, nothing you don't",
+      "features": [
+        { "name": "Fast page loads", "icon": "zap" },
+        { "name": "On-brand colors", "icon": "palette" },
+        { "name": "Contact form", "icon": "mail" },
+        { "name": "Booking calendar", "icon": "calendar" },
+        { "name": "Google Maps", "icon": "map-pin" },
+        { "name": "Basic SEO", "icon": "search" },
+        { "name": "SSL security", "icon": "lock" },
+        { "name": "Monthly updates", "icon": "refresh-cw" }
+      ]
+    },
+    "finalCta": {
+      "headline": "Ready to get more calls?",
+      "subheadline": "Book a 20-minute call. No pressure, just honest advice on what you need.",
+      "cta": "Book a call"
+    }
+  },
+  "howItWorks": {
+    "headline": "Simple process, fast results",
+    "subheadline": "From first call to live site in 48-72 hours (configurable)",
+    "timeline": [
+      {
+        "title": "Discovery Call",
+        "duration": "20 minutes",
+        "description": "We learn about your business, customers, and what you need from a website.",
+        "details": [
+          "What services you offer",
+          "Who your typical customer is",
+          "Where you work (service areas)",
+          "What you want the site to do"
+        ]
+      },
+      {
+        "title": "Content Intake",
+        "duration": "You send, we organize",
+        "description": "Simple checklist of what we need. No tech skills required.",
+        "details": [
+          "Business name and contact info",
+          "Logo (if you have one)",
+          "5-10 photos of your work",
+          "List of services you offer",
+          "Google Business Profile link"
+        ]
+      },
+      {
+        "title": "Build",
+        "duration": "48-72 hours",
+        "description": "We build your site using proven templates customized for your business.",
+        "details": [
+          "Clean, professional design",
+          "Your brand colors and style",
+          "Mobile-first layout",
+          "Contact form and booking setup",
+          "Basic SEO configuration"
+        ]
+      },
+      {
+        "title": "Launch",
+        "duration": "Same day",
+        "description": "We handle all the technical details. You just approve and go live.",
+        "details": [
+          "Domain connection (or help you get one)",
+          "SSL certificate installed",
+          "Form notifications set up",
+          "Booking calendar connected",
+          "Final review and tweaks"
+        ]
+      },
+      {
+        "title": "Ongoing Updates",
+        "duration": "Monthly",
+        "description": "Send us changes via email. We handle the updates.",
+        "details": [
+          "Update hours or contact info",
+          "Add new services or photos",
+          "Seasonal promotions",
+          "Security and performance updates"
+        ]
+      }
+    ],
+    "whatWeNeed": {
+      "headline": "What we need from you",
+      "checklist": [
+        "Business name, phone, and email",
+        "Service areas (cities/regions you serve)",
+        "Top 3-5 services you offer",
+        "5-10 photos of your work or team",
+        "Logo (if you have one; we can create a simple text logo if not)",
+        "Google Business Profile link (if you have one)"
+      ]
+    },
+    "seoBasics": {
+      "headline": "SEO basics we ship",
+      "description": "Every site includes foundational SEO setup to help you show up in local search.",
+      "items": [
+        {
+          "title": "Clean page titles and meta descriptions",
+          "description": "Each page has a unique, search-friendly title and description."
+        },
+        {
+          "title": "Fast page speed",
+          "description": "Optimized images and lean code mean Google ranks you higher."
+        },
+        {
+          "title": "Mobile-responsive HTML",
+          "description": "Google prioritizes mobile-friendly sites. Yours will be."
+        },
+        {
+          "title": "LocalBusiness schema (optional)",
+          "description": "Structured data that helps search engines understand your business details."
+        }
+      ],
+      "note": "We provide foundational SEO only. For ongoing SEO, content strategy, or link building, consider working with an SEO specialist."
+    }
+  },
+  "faq": {
+    "headline": "Common questions",
+    "items": [
+      {
+        "question": "Do I keep the site if I cancel?",
+        "answer": "We'll work with you on transition options. In most cases, we can export your content and help you move to another host. Contact us to discuss your specific situation and timeline."
+      },
+      {
+        "question": "Can I get a domain email address?",
+        "answer": "Yes. We can help you set up a professional email address using your domain (e.g., you@yourbusiness.com). This typically costs $6-12/month through Google Workspace or a similar provider."
+      },
+      {
+        "question": "How fast can we launch?",
+        "answer": "Target is 48-72 hours from when we receive your content and photos. If you need it faster, let us know during the discovery call and we'll see what we can do."
+      },
+      {
+        "question": "What about SEO?",
+        "answer": "Every site includes foundational SEO: clean code, fast loading, mobile-responsive design, proper meta tags, and optional LocalBusiness schema markup. This gives you a solid starting point. For ongoing SEO strategy, content creation, or link building, we recommend working with an SEO specialist."
+      },
+      {
+        "question": "Where do form leads go?",
+        "answer": "Contact form submissions go directly to your email. You'll also receive a notification from Netlify (our hosting platform). All submissions are stored securely and can be exported as a CSV anytime."
+      },
+      {
+        "question": "Can customers book appointments?",
+        "answer": "Yes. We integrate Calendly (or your preferred booking tool) so customers can schedule directly from your site. You can embed the calendar inline on a page or have it pop up when they click a button."
+      },
+      {
+        "question": "What if I need changes?",
+        "answer": "Just email us. All plans include monthly updates. Small changes (hours, phone number, pricing) are usually handled within 24 hours. Larger updates (new pages, content rewrites) depend on your plan tier."
+      },
+      {
+        "question": "Do you handle domain registration?",
+        "answer": "We can help you register a new domain or connect an existing one. Domain registration typically costs $12-15/year and is billed separately."
+      },
+      {
+        "question": "Is hosting included?",
+        "answer": "Yes. All plans include fast, secure hosting via Netlify. No extra fees, no surprises."
+      },
+      {
+        "question": "Can I see examples?",
+        "answer": "Check out our template gallery to see sample layouts. Each site is customized with your brand, content, and photos."
+      }
+    ]
+  },
+  "accessibility": {
+    "headline": "Our commitment to accessibility",
+    "statement": "SiteBloom is committed to building websites that are accessible to all users, including those with disabilities. Every site we build follows WCAG 2.1 Level AA guidelines and includes semantic HTML, keyboard navigation support, and visible focus indicators.",
+    "standards": [
+      {
+        "name": "WCAG 2.1 Level AA",
+        "description": "We follow Web Content Accessibility Guidelines to ensure your site is usable by everyone.",
+        "link": "https://www.w3.org/WAI/WCAG21/quickref/"
+      },
+      {
+        "name": "Semantic HTML",
+        "description": "Proper heading structure, landmarks, and ARIA labels for screen readers.",
+        "link": "https://webaim.org/resources/htmlcheatsheet/"
+      },
+      {
+        "name": "Keyboard Navigation",
+        "description": "All interactive elements are accessible via keyboard without requiring a mouse.",
+        "link": "https://webaim.org/articles/keyboard/"
+      },
+      {
+        "name": "Color Contrast",
+        "description": "Text and interactive elements meet WCAG AA contrast requirements (4.5:1 minimum).",
+        "link": "https://webaim.org/resources/contrastchecker/"
+      }
+    ],
+    "local": {
+      "headline": "Resources for local businesses",
+      "description": "Google provides specific guidance on creating accessible local business websites that work well for all customers.",
+      "link": "https://developers.google.com/search/docs/advanced/structured-data/local-business"
+    },
+    "feedback": "If you encounter any accessibility issues on a SiteBloom website, please contact us so we can address them promptly."
+  },
+  "legal": {
+    "terms": {
+      "headline": "Terms of Service",
+      "lastUpdated": "Placeholder - Update before launch",
+      "note": "This is a placeholder. Please have these terms reviewed by a qualified attorney before launching your site."
+    },
+    "privacy": {
+      "headline": "Privacy Policy",
+      "lastUpdated": "Placeholder - Update before launch",
+      "note": "This is a placeholder. Please have this policy reviewed by a qualified attorney before launching your site."
+    }
+  }
+}

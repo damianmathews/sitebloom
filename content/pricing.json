@@ -1,0 +1,137 @@
+{
+  "headline": "Simple, monthly pricing",
+  "subheadline": "No surprises. Cancel anytime.",
+  "tiers": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "description": "Perfect for solo operators and new businesses",
+      "price": "$149",
+      "period": "/month",
+      "setupFee": "$499 setup",
+      "features": [
+        "1 page website",
+        "Contact form",
+        "Google Maps embed",
+        "Calendly booking widget",
+        "Mobile responsive",
+        "Basic SEO setup",
+        "SSL certificate",
+        "Lite monthly updates"
+      ],
+      "cta": "Get Started",
+      "popular": false
+    },
+    {
+      "id": "standard",
+      "name": "Standard",
+      "description": "Great for established local businesses",
+      "price": "$249",
+      "period": "/month",
+      "setupFee": "$799 setup",
+      "features": [
+        "Up to 5 pages",
+        "Blog/News section",
+        "Photo galleries",
+        "FAQ section",
+        "All Starter features",
+        "Service area pages",
+        "Standard monthly updates",
+        "Priority support"
+      ],
+      "cta": "Get Started",
+      "popular": true
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "description": "For businesses ready to scale",
+      "price": "$399",
+      "period": "/month",
+      "setupFee": "$1,199 setup",
+      "features": [
+        "Up to 10 pages",
+        "Lead magnet forms",
+        "Review showcase area",
+        "Quarterly strategy calls",
+        "All Standard features",
+        "Advanced SEO",
+        "Custom integrations",
+        "White-glove support"
+      ],
+      "cta": "Get Started",
+      "popular": false
+    }
+  ],
+  "faqTeaser": {
+    "question": "Do I keep the site if I cancel?",
+    "answer": "We'll work with you on transition options. Contact us to discuss your specific situation."
+  },
+  "comparison": {
+    "categories": [
+      {
+        "name": "Website Pages",
+        "features": [
+          {
+            "name": "Number of pages",
+            "starter": "1",
+            "standard": "Up to 5",
+            "pro": "Up to 10"
+          },
+          {
+            "name": "Blog/News",
+            "starter": false,
+            "standard": true,
+            "pro": true
+          },
+          {
+            "name": "Photo galleries",
+            "starter": false,
+            "standard": true,
+            "pro": true
+          }
+        ]
+      },
+      {
+        "name": "Lead Generation",
+        "features": [
+          {
+            "name": "Contact form",
+            "starter": true,
+            "standard": true,
+            "pro": true
+          },
+          {
+            "name": "Calendly booking",
+            "starter": true,
+            "standard": true,
+            "pro": true
+          },
+          {
+            "name": "Lead magnets",
+            "starter": false,
+            "standard": false,
+            "pro": true
+          }
+        ]
+      },
+      {
+        "name": "Support & Updates",
+        "features": [
+          {
+            "name": "Monthly updates",
+            "starter": "Lite",
+            "standard": "Standard",
+            "pro": "Premium"
+          },
+          {
+            "name": "Strategy calls",
+            "starter": false,
+            "standard": false,
+            "pro": "Quarterly"
+          }
+        ]
+      }
+    ]
+  }
+}
