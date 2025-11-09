@@ -3,7 +3,7 @@
 
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "out"
 
 # Next.js Runtime
 [build.environment]
@@ -14,12 +14,6 @@
 # - data-netlify="true" attribute
 # - name attribute
 # - hidden input with name="form-name"
-
-# Redirects and rewrites for Next.js
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/server"
-  status = 200
 
 # Security headers
 [[headers]]
@@ -36,12 +30,3 @@
   for = "/_next/static/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/fonts/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-# Plugin configuration for Next.js
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
