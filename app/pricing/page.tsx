@@ -15,11 +15,15 @@ export default function PricingPage() {
 
   return (
     <>
-      <Section background="cloud" className="pt-32">
-        <SectionHeader
-          headline={headline}
-          subheadline={subheadline}
-        />
+      <Section background="cloud" className="pt-32 relative overflow-hidden">
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:64px_64px] opacity-45" />
+
+        <div className="relative z-10">
+          <SectionHeader
+            headline={headline}
+            subheadline={subheadline}
+          />
 
         {/* Price Cards - Now 2 columns for Standard and Pro */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
@@ -39,17 +43,18 @@ export default function PricingPage() {
           ))}
         </div>
 
-        {/* FAQ Link */}
-        <div className="text-center">
-          <p className="text-lg text-gray-600 mb-4">
-            Have questions about our pricing?
-          </p>
-          <a
-            href="/faq"
-            className="text-sb-iris font-semibold hover:text-sb-iris/80 transition-colors underline text-lg"
-          >
-            View all FAQs →
-          </a>
+          {/* FAQ Link */}
+          <div className="text-center">
+            <p className="text-lg text-gray-600 mb-4">
+              Have questions about our pricing?
+            </p>
+            <a
+              href="/faq"
+              className="text-sb-iris font-semibold hover:text-sb-iris/80 transition-colors underline text-lg"
+            >
+              View all FAQs →
+            </a>
+          </div>
         </div>
       </Section>
     </>

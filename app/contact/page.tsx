@@ -15,13 +15,17 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <Section background="cloud" className="pt-32">
-        <div className="max-w-4xl mx-auto text-center mb-12">
-          <SectionHeader
-            headline="Let's talk about your business"
-            subheadline="Book a free 20-minute call or send us a message. We'll get back to you within 24 hours."
-          />
-        </div>
+      <Section background="cloud" className="pt-32 relative overflow-hidden">
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:64px_64px] opacity-45" />
+
+        <div className="relative z-10">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <SectionHeader
+              headline="Let's talk about your business"
+              subheadline="Book a free 20-minute call or send us a message. We'll get back to you within 24 hours."
+            />
+          </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
@@ -93,6 +97,7 @@ export default function ContactPage() {
               </Card>
             )}
           </div>
+        </div>
         </div>
       </Section>
     </>

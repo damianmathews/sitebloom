@@ -17,11 +17,15 @@ export default function HowItWorksPage() {
 
   return (
     <>
-      <Section background="cloud" className="pt-32">
-        <SectionHeader
-          headline={headline}
-          subheadline={subheadline.replace('(configurable)', config.features.buildTarget)}
-        />
+      <Section background="cloud" className="pt-32 relative overflow-hidden">
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:64px_64px] opacity-45" />
+
+        <div className="relative z-10">
+          <SectionHeader
+            headline={headline}
+            subheadline={subheadline.replace('(configurable)', config.features.buildTarget)}
+          />
 
         {/* Timeline */}
         <div className="max-w-4xl mx-auto space-y-8 mb-16">
@@ -57,6 +61,7 @@ export default function HowItWorksPage() {
               </CardContent>
             </Card>
           ))}
+        </div>
         </div>
       </Section>
 

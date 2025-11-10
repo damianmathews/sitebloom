@@ -15,8 +15,12 @@ export default function FAQPage() {
 
   return (
     <>
-      <Section background="cloud" className="pt-32">
-        <SectionHeader headline={headline} />
+      <Section background="cloud" className="pt-32 relative overflow-hidden">
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:64px_64px] opacity-45" />
+
+        <div className="relative z-10">
+          <SectionHeader headline={headline} />
 
         <div className="max-w-4xl mx-auto space-y-6">
           {items.map((item, index) => (
@@ -33,14 +37,15 @@ export default function FAQPage() {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="mt-16 text-center">
-          <p className="text-lg text-gray-600 mb-6">
-            Still have questions? We're here to help.
-          </p>
-          <PrimaryCTA href="/contact">
-            Get in touch
-          </PrimaryCTA>
+          {/* CTA */}
+          <div className="mt-16 text-center">
+            <p className="text-lg text-gray-600 mb-6">
+              Still have questions? We're here to help.
+            </p>
+            <PrimaryCTA href="/contact">
+              Get in touch
+            </PrimaryCTA>
+          </div>
         </div>
       </Section>
     </>
