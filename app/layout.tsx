@@ -26,7 +26,11 @@ export const metadata: Metadata = {
   keywords: ["website design", "local business websites", "small business web design", "contractor websites", "service business websites"],
   authors: [{ name: config.siteName }],
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon.png" },
+      { url: "/icon.png", sizes: "any" }
+    ],
+    apple: "/favicon.png",
   },
   openGraph: {
     type: "website",
