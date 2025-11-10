@@ -11,8 +11,8 @@ export function Logo({ className = '', variant = 'default' }: LogoProps) {
     <Image
       src="/sitester-logo.png"
       alt="sitester"
-      width={200}
-      height={48}
+      width={240}
+      height={58}
       className={className}
       priority
     />
