@@ -55,7 +55,7 @@ export default function WorkPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {templates.map((template, index) => (
             <Link key={template.id} href={`/templates/${template.id}`}>
-              <Card className="h-full rounded-3xl border-sb-line hover:border-sb-iris hover:shadow-xl transition-all duration-300 cursor-pointer group">
+              <Card className="h-full rounded-3xl border-sb-line hover:border-sb-orange/30 hover:shadow-xl transition-all duration-300 cursor-pointer group">
                 <CardContent className="p-0">
                   {/* Placeholder Thumbnail */}
                   <div className={`h-48 ${template.color} rounded-t-3xl flex items-center justify-center relative overflow-hidden`}>
@@ -70,13 +70,13 @@ export default function WorkPage() {
 
                   {/* Content */}
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-sb-ink mb-2 group-hover:text-sb-iris transition-colors">
+                    <h3 className="text-xl font-bold text-sb-ink mb-2 group-hover:text-sb-orange transition-colors">
                       {template.name}
                     </h3>
                     <p className="text-gray-600 mb-4">
                       {template.description}
                     </p>
-                    <div className="flex items-center text-sb-iris font-semibold group-hover:gap-2 transition-all">
+                    <div className="flex items-center text-sb-orange font-semibold group-hover:gap-2 transition-all">
                       <span>View template</span>
                       <ArrowRight className="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" />
                     </div>
