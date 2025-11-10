@@ -85,7 +85,7 @@ export default function ContactPage() {
                     href={config.calendlyUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-white text-sb-iris font-semibold px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sb-iris"
+                    className="inline-block bg-white text-sb-ink font-semibold px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sb-orange"
                   >
                     View available times
                   </a>
