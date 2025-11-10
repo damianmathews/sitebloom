@@ -40,7 +40,7 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-sb-ink hover:text-sb-iris font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-sb-iris focus:ring-offset-2 rounded px-2 py-1"
+                  className="text-sb-ink hover:text-sb-orange font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-sb-orange focus:ring-offset-2 rounded px-2 py-1"
                 >
                   {item.label}
                 </Link>
@@ -53,7 +53,7 @@ export function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 text-sb-ink hover:text-sb-iris focus:outline-none focus:ring-2 focus:ring-sb-iris rounded"
+              className="lg:hidden p-2 text-sb-ink hover:text-sb-orange focus:outline-none focus:ring-2 focus:ring-sb-orange rounded"
               aria-label="Toggle mobile menu"
               aria-expanded={mobileMenuOpen}
             >
@@ -78,7 +78,7 @@ export function Header() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block text-lg font-medium text-sb-ink hover:text-sb-iris py-2 focus:outline-none focus:ring-2 focus:ring-sb-iris rounded px-2"
+                    className="block text-lg font-medium text-sb-ink hover:text-sb-orange py-2 focus:outline-none focus:ring-2 focus:ring-sb-orange rounded px-2"
                   >
                     {item.label}
                   </Link>

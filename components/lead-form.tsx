@@ -54,7 +54,7 @@ export function LeadForm({ formName = 'contact' }: LeadFormProps) {
           id="name"
           name="name"
           required
-          className="w-full rounded-xl border-sb-line focus:border-sb-iris focus:ring-sb-iris"
+          className="w-full rounded-xl border-sb-line focus:border-sb-orange focus:ring-sb-orange"
           placeholder="Your full name"
         />
       </div>
@@ -69,7 +69,7 @@ export function LeadForm({ formName = 'contact' }: LeadFormProps) {
           id="email"
           name="email"
           required
-          className="w-full rounded-xl border-sb-line focus:border-sb-iris focus:ring-sb-iris"
+          className="w-full rounded-xl border-sb-line focus:border-sb-orange focus:ring-sb-orange"
           placeholder="you@example.com"
         />
       </div>
@@ -84,7 +84,7 @@ export function LeadForm({ formName = 'contact' }: LeadFormProps) {
           id="phone"
           name="phone"
           required
-          className="w-full rounded-xl border-sb-line focus:border-sb-iris focus:ring-sb-iris"
+          className="w-full rounded-xl border-sb-line focus:border-sb-orange focus:ring-sb-orange"
           placeholder="(555) 123-4567"
         />
       </div>
@@ -98,7 +98,7 @@ export function LeadForm({ formName = 'contact' }: LeadFormProps) {
           id="service-category"
           name="service-category"
           required
-          className="w-full rounded-xl border border-sb-line focus:border-sb-iris focus:ring-2 focus:ring-sb-iris p-3 bg-white text-sb-ink"
+          className="w-full rounded-xl border border-sb-line focus:border-sb-orange focus:ring-2 focus:ring-sb-orange p-3 bg-white text-sb-ink"
         >
           <option value="">Select a category</option>
           <option value="plumber">Plumber</option>
@@ -122,7 +122,7 @@ export function LeadForm({ formName = 'contact' }: LeadFormProps) {
           id="message"
           name="message"
           rows={5}
-          className="w-full rounded-xl border-sb-line focus:border-sb-iris focus:ring-sb-iris resize-none"
+          className="w-full rounded-xl border-sb-line focus:border-sb-orange focus:ring-sb-orange resize-none"
           placeholder="Tell us about your business and what you're looking for..."
         />
       </div>
@@ -130,7 +130,7 @@ export function LeadForm({ formName = 'contact' }: LeadFormProps) {
       {/* Submit button */}
       <button
         type="submit"
-        className="w-full bg-sb-iris hover:bg-sb-iris/90 text-white font-semibold px-8 py-4 text-lg rounded-xl shadow-md hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-sb-iris focus:ring-offset-2"
+        className="w-full bg-sb-orange hover:bg-sb-orange/90 text-white font-semibold px-8 py-4 text-lg rounded-xl shadow-md hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-sb-orange focus:ring-offset-2"
       >
         Send Message
       </button>

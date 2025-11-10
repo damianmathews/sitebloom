@@ -20,10 +20,10 @@ export function FeatureCard({ title, description, icon: Icon, index = 0 }: Featu
       viewport={{ once: true, margin: '-100px' }}
       transition={{ duration: 0.3, delay: index * 0.08 }}
     >
-      <Card className="h-full border-sb-line hover:border-sb-iris hover:shadow-lg transition-all duration-300 rounded-2xl">
+      <Card className="h-full border-sb-line hover:border-sb-orange/30 hover:shadow-lg transition-all duration-300 rounded-2xl">
         <CardContent className="p-6 md:p-8">
-          <div className="mb-4 inline-flex p-3 bg-sb-cloud rounded-xl">
-            <Icon className="h-6 w-6 text-sb-iris" />
+          <div className="mb-4 inline-flex p-3 bg-sb-orange/10 rounded-xl">
+            <Icon className="h-6 w-6 text-sb-orange" />
           </div>
           <h3 className="text-xl font-semibold text-sb-ink mb-2">{title}</h3>
           <p className="text-gray-600 leading-relaxed">{description}</p>
@@ -40,9 +40,9 @@ interface IconBadgeProps {
 
 export function IconBadge({ icon: Icon, label }: IconBadgeProps) {
   return (
-    <div className="flex flex-col items-center gap-3 p-4 bg-white rounded-xl border border-sb-line hover:border-sb-iris transition-colors">
-      <div className="p-3 bg-sb-cloud rounded-lg">
-        <Icon className="h-6 w-6 text-sb-iris" />
+    <div className="flex flex-col items-center gap-3 p-4 bg-white rounded-xl border border-sb-line hover:border-sb-orange/30 hover:bg-sb-orange/5 transition-all duration-300">
+      <div className="p-3 bg-sb-orange/10 rounded-lg">
+        <Icon className="h-6 w-6 text-sb-orange" />
       </div>
       <span className="text-sm font-medium text-sb-ink">{label}</span>
     </div>
@@ -66,7 +66,7 @@ export function Step({ number, title, description, details, index = 0 }: StepPro
       transition={{ duration: 0.3, delay: index * 0.1 }}
       className="relative pl-12 md:pl-16"
     >
-      <div className="absolute left-0 top-0 w-10 h-10 md:w-12 md:h-12 rounded-full bg-sb-iris text-white flex items-center justify-center font-bold text-lg md:text-xl">
+      <div className="absolute left-0 top-0 w-10 h-10 md:w-12 md:h-12 rounded-full bg-sb-orange text-white flex items-center justify-center font-bold text-lg md:text-xl">
         {number}
       </div>
       <div>

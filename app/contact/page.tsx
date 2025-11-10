@@ -3,7 +3,7 @@ import { Section, SectionHeader } from '@/components/ui/section';
 import { LeadForm } from '@/components/lead-form';
 import { CalendlyEmbed } from '@/components/calendly-embed';
 import { Card, CardContent } from '@/components/ui/card';
-import { Phone } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import config from '@/content/config.json';
 import type { Metadata } from 'next';
 
@@ -39,26 +39,43 @@ export default function ContactPage() {
               <CardContent className="p-8">
                 <h2 className="text-2xl font-bold text-sb-ink mb-6">Get in touch</h2>
 
-                <a
-                  href={`tel:${config.phone}`}
-                  className="flex items-center gap-4 p-4 rounded-xl bg-sb-cloud hover:bg-sb-sand transition-colors group"
-                >
-                  <div className="p-3 bg-sb-iris rounded-lg">
-                    <Phone className="h-5 w-5 text-white" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-gray-600">Call us</div>
-                    <div className="font-semibold text-sb-ink group-hover:text-sb-iris transition-colors">
-                      {config.phone}
+                <div className="space-y-4">
+                  <a
+                    href={`tel:${config.phone}`}
+                    className="flex items-center gap-4 p-4 rounded-xl bg-sb-cloud hover:bg-sb-sand transition-colors group"
+                  >
+                    <div className="p-3 bg-sb-orange rounded-lg">
+                      <Phone className="h-5 w-5 text-white" />
                     </div>
-                  </div>
-                </a>
+                    <div>
+                      <div className="text-sm text-gray-600">Call us</div>
+                      <div className="font-semibold text-sb-ink group-hover:text-sb-orange transition-colors">
+                        {config.phone}
+                      </div>
+                    </div>
+                  </a>
+
+                  <a
+                    href={`mailto:${config.email}`}
+                    className="flex items-center gap-4 p-4 rounded-xl bg-sb-cloud hover:bg-sb-sand transition-colors group"
+                  >
+                    <div className="p-3 bg-sb-orange rounded-lg">
+                      <Mail className="h-5 w-5 text-white" />
+                    </div>
+                    <div>
+                      <div className="text-sm text-gray-600">Email us</div>
+                      <div className="font-semibold text-sb-ink group-hover:text-sb-orange transition-colors">
+                        {config.email}
+                      </div>
+                    </div>
+                  </a>
+                </div>
               </CardContent>
             </Card>
 
             {/* Calendly Alternative */}
             {config.features.calendlyPopup && (
-              <Card className="rounded-3xl border-sb-line shadow-lg bg-sb-iris text-white">
+              <Card className="rounded-3xl border-sb-line shadow-lg bg-sb-orange text-white">
                 <CardContent className="p-8 text-center">
                   <h3 className="text-2xl font-bold mb-4">Prefer to book a call?</h3>
                   <p className="mb-6 text-white/90">

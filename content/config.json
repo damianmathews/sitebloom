@@ -1,10 +1,11 @@
 {
-  "siteName": "SiteBloom",
+  "siteName": "sitester",
   "tagline": "Websites that book jobs.",
-  "description": "SiteBloom builds fast, clean sites that help local businesses get more calls and bookings.",
+  "description": "sitester builds fast, clean sites that help local businesses get more calls and bookings.",
   "phone": "(617) 678-2418",
+  "email": "info@sitester.io",
   "calendlyUrl": "https://calendly.com/sitebloom/meet-w-me",
-  "plausibleDomain": "sitebloom.example",
+  "plausibleDomain": "sitester.io",
   "features": {
     "localBusinessSchema": false,
     "calendlyPopup": true,

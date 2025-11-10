@@ -1,14 +1,12 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Import Google Fonts: Inter Tight (display) and Inter (text) */
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500;600&display=swap');
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* SiteBloom Brand Colors */
+  /* sitester Brand Colors */
   --color-sb-ink: #0B1220;
+  --color-sb-orange: #f97211;
   --color-sb-iris: #4C6FFF;
   --color-sb-mint: #27C3A7;
   --color-sb-sand: #F5F2EC;
@@ -41,33 +39,33 @@
   --radius-lg: 24px;
   --radius-xl: 28px;
 
-  /* Fonts */
-  --font-display: "Inter Tight", system-ui, sans-serif;
-  --font-text: "Inter", system-ui, sans-serif;
+  /* Fonts - Using Geist */
+  --font-display: var(--font-geist-sans);
+  --font-text: var(--font-geist-sans);
 }
 
 :root {
   --radius: 1.25rem;
 
-  /* Light theme using SiteBloom colors */
+  /* Light theme using sitester colors */
   --background: #FFFFFF;
   --foreground: #0B1220;
   --card: #FFFFFF;
   --card-foreground: #0B1220;
   --popover: #FFFFFF;
   --popover-foreground: #0B1220;
-  --primary: #4C6FFF;
+  --primary: #f97211;
   --primary-foreground: #FFFFFF;
   --secondary: #EEF2F7;
   --secondary-foreground: #0B1220;
   --muted: #F5F2EC;
   --muted-foreground: #6B7280;
-  --accent: #27C3A7;
+  --accent: #f97211;
   --accent-foreground: #FFFFFF;
   --destructive: #EF4444;
   --border: #D9DFE7;
   --input: #D9DFE7;
-  --ring: #4C6FFF;
+  --ring: #f97211;
 }
 
 @layer base {

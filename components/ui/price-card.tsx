@@ -38,15 +38,15 @@ export function PriceCard({
       className="relative h-full"
     >
       {popular && (
-        <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-sb-iris text-white px-4 py-1 rounded-full text-sm font-semibold">
+        <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-sb-orange text-white px-4 py-1 rounded-full text-sm font-semibold">
           Most Popular
         </div>
       )}
       <Card
         className={`h-full flex flex-col rounded-3xl transition-all duration-300 ${
           popular
-            ? 'border-2 border-sb-iris shadow-xl scale-105'
-            : 'border border-sb-line hover:border-sb-iris hover:shadow-lg'
+            ? 'border-2 border-sb-orange shadow-xl scale-105'
+            : 'border border-sb-line hover:border-sb-orange hover:shadow-lg'
         }`}
       >
         <CardHeader className="text-center pb-6 pt-8">

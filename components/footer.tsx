@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { LogoText } from '@/components/logo';
-import { Phone } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import { PrimaryCTA } from '@/components/ui/cta-buttons';
 import config from '@/content/config.json';
 
@@ -32,13 +32,22 @@ export function Footer() {
           <div>
             <LogoText variant="white" className="mb-4" />
             <p className="text-gray-400 mb-6">{config.description}</p>
-            <a
-              href={`tel:${config.phone}`}
-              className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
-            >
-              <Phone className="h-4 w-4" />
-              <span>{config.phone}</span>
-            </a>
+            <div className="space-y-3">
+              <a
+                href={`tel:${config.phone}`}
+                className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                <span>{config.phone}</span>
+              </a>
+              <a
+                href={`mailto:${config.email}`}
+                className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+              >
+                <Mail className="h-4 w-4" />
+                <span>{config.email}</span>
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}

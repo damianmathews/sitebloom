@@ -1,10 +1,11 @@
-// SiteBloom Brand Tokens
-// Positioning: Clean, trustworthy, trade-friendly. Understated premium.
+// sitester Brand Tokens
+// Positioning: Clean, trustworthy, trade-friendly. Modern and accessible.
 
 export const colors = {
   sb: {
     ink: '#0B1220',      // primary ink
-    iris: '#4C6FFF',     // action
+    orange: '#f97211',   // primary brand color (sitester orange)
+    iris: '#4C6FFF',     // action (secondary)
     mint: '#27C3A7',     // accent/success
     sand: '#F5F2EC',     // warm background
     cloud: '#EEF2F7',    // ui background

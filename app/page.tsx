@@ -54,35 +54,97 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <Section background="cloud" className="pt-32 pb-20 relative overflow-hidden">
-        {/* Vibrant gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-60" />
-        <div className="absolute top-20 -left-40 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
-        <div className="absolute top-40 -right-40 w-80 h-80 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
-        <div className="absolute -bottom-20 left-1/2 w-80 h-80 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000" />
+      {/* Hero Section - Framer-inspired */}
+      <Section background="white" className="pt-20 pb-32 relative overflow-hidden min-h-[90vh] flex items-center">
+        {/* Subtle gradient background with orange accent */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-gray-50/30 to-white" />
 
-        <div className="relative z-10 text-center max-w-4xl mx-auto">
-          <MotionReveal>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-sb-ink mb-6 leading-tight">
-              {hero.headline}
-            </h1>
-          </MotionReveal>
-          <MotionReveal delay={0.1}>
-            <p className="text-xl md:text-2xl text-gray-700 mb-10 max-w-2xl mx-auto font-medium">
-              {hero.subheadline}
-            </p>
-          </MotionReveal>
-          <MotionReveal delay={0.2}>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <PrimaryCTA href="/contact" icon>
-                {hero.primaryCta}
-              </PrimaryCTA>
-              <SecondaryCTA href="/pricing">
-                {hero.secondaryCta}
-              </SecondaryCTA>
-            </div>
-          </MotionReveal>
+        {/* Soft orange glow */}
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-sb-orange/5 rounded-full blur-3xl" />
+
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:64px_64px] opacity-20" />
+
+        <div className="relative z-10 w-full max-w-6xl mx-auto px-4">
+          <div className="text-center space-y-8">
+            {/* Small orange badge */}
+            <MotionReveal>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sb-orange/10 border border-sb-orange/20">
+                <div className="w-2 h-2 bg-sb-orange rounded-full animate-pulse" />
+                <span className="text-sm font-medium text-sb-orange">Built for local businesses</span>
+              </div>
+            </MotionReveal>
+
+            {/* Large, bold headline */}
+            <MotionReveal delay={0.1}>
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-sb-ink leading-[1.1] tracking-tight">
+                {hero.headline}
+              </h1>
+            </MotionReveal>
+
+            {/* Subheadline with better spacing */}
+            <MotionReveal delay={0.2}>
+              <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                {hero.subheadline}
+              </p>
+            </MotionReveal>
+
+            {/* CTA buttons with orange accent */}
+            <MotionReveal delay={0.3}>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+                <a
+                  href="/contact"
+                  className="group relative inline-flex items-center gap-2 px-8 py-4 bg-sb-orange text-white font-semibold rounded-2xl hover:bg-sb-orange/90 transition-all duration-300 shadow-lg shadow-sb-orange/25 hover:shadow-xl hover:shadow-sb-orange/30 hover:scale-105"
+                >
+                  <span>{hero.primaryCta}</span>
+                  <svg
+                    className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+                <a
+                  href="/pricing"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-white text-sb-ink font-semibold rounded-2xl border-2 border-gray-200 hover:border-sb-orange/30 hover:bg-gray-50 transition-all duration-300"
+                >
+                  {hero.secondaryCta}
+                </a>
+              </div>
+            </MotionReveal>
+
+            {/* Subtle social proof or feature badges */}
+            <MotionReveal delay={0.4}>
+              <div className="flex flex-wrap items-center justify-center gap-6 pt-8 text-sm text-gray-500">
+                <div className="flex items-center gap-2">
+                  <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center">
+                    <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span>48-72 hour delivery</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center">
+                    <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span>No contracts</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center">
+                    <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span>Unlimited updates</span>
+                </div>
+              </div>
+            </MotionReveal>
+          </div>
         </div>
       </Section>
 
@@ -143,10 +205,10 @@ export default function HomePage() {
           {whatYouGet.features.map((feature, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center gap-3 p-6 bg-white rounded-2xl border border-sb-line hover:border-sb-iris transition-colors"
+              className="flex flex-col items-center text-center gap-3 p-6 bg-white rounded-2xl border border-sb-line hover:border-sb-orange/30 hover:bg-sb-orange/5 transition-all duration-300"
             >
               {React.createElement(iconMap[feature.icon], {
-                className: 'h-8 w-8 text-sb-iris',
+                className: 'h-8 w-8 text-sb-orange',
               })}
               <span className="font-medium text-sb-ink">{feature.name}</span>
             </div>

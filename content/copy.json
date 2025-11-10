@@ -2,7 +2,7 @@
   "home": {
     "hero": {
       "headline": "Websites that book jobs.",
-      "subheadline": "SiteBloom builds fast, clean sites that help local businesses get more calls and bookings.",
+      "subheadline": "sitester builds fast, clean sites that help local businesses get more calls and bookings.",
       "primaryCta": "Book a call",
       "secondaryCta": "Get a price"
     },
@@ -229,7 +229,7 @@
   },
   "accessibility": {
     "headline": "Our commitment to accessibility",
-    "statement": "SiteBloom is committed to building websites that are accessible to all users, including those with disabilities. Every site we build follows WCAG 2.1 Level AA guidelines and includes semantic HTML, keyboard navigation support, and visible focus indicators.",
+    "statement": "sitester is committed to building websites that are accessible to all users, including those with disabilities. Every site we build follows WCAG 2.1 Level AA guidelines and includes semantic HTML, keyboard navigation support, and visible focus indicators.",
     "standards": [
       {
         "name": "WCAG 2.1 Level AA",
@@ -257,7 +257,7 @@
       "description": "Google provides specific guidance on creating accessible local business websites that work well for all customers.",
       "link": "https://developers.google.com/search/docs/advanced/structured-data/local-business"
     },
-    "feedback": "If you encounter any accessibility issues on a SiteBloom website, please contact us so we can address them promptly."
+    "feedback": "If you encounter any accessibility issues on a sitester website, please contact us so we can address them promptly."
   },
   "legal": {
     "terms": {

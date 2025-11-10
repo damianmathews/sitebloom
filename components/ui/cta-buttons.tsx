@@ -25,7 +25,7 @@ export function PrimaryCTA({ children, href, onClick, className = '', icon = fal
   const buttonElement = (
     <Button
       size="lg"
-      className={`bg-sb-iris hover:bg-sb-iris/90 text-white font-semibold px-8 py-6 text-lg rounded-xl shadow-md hover:shadow-lg transition-all ${className}`}
+      className={`bg-sb-orange hover:bg-sb-orange/90 text-white font-semibold px-8 py-6 text-lg rounded-xl shadow-md hover:shadow-lg transition-all ${className}`}
       onClick={onClick}
     >
       {content}
@@ -52,7 +52,7 @@ export function SecondaryCTA({ children, href, onClick, className = '' }: CTAPro
     <Button
       size="lg"
       variant="outline"
-      className={`border-2 border-sb-line hover:border-sb-iris hover:bg-sb-cloud text-sb-ink font-semibold px-8 py-6 text-lg rounded-xl transition-all ${className}`}
+      className={`border-2 border-sb-line hover:border-sb-orange hover:bg-sb-orange/5 text-sb-ink font-semibold px-8 py-6 text-lg rounded-xl transition-all ${className}`}
       onClick={onClick}
     >
       {children}
