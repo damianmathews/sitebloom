@@ -35,6 +35,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
+    url: "https://sitester.io",
     locale: "en_US",
     siteName: config.siteName,
     title: config.tagline,
