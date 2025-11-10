@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Logo } from '@/components/logo';
 import { PrimaryCTA } from '@/components/ui/cta-buttons';
 import { Menu, X } from 'lucide-react';
@@ -18,6 +19,7 @@ const navItems = [
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <>
@@ -36,15 +38,20 @@ export function Header() {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8">
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-sb-ink hover:text-sb-orange font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-sb-orange focus:ring-offset-2 rounded px-2 py-1"
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {navItems.map((item) => {
+                const isActive = pathname === item.href;
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`text-sb-ink hover:text-sb-orange font-medium transition-all focus:outline-none focus:ring-2 focus:ring-sb-orange focus:ring-offset-2 rounded px-2 py-1 ${
+                      isActive ? 'border-2 border-sb-orange' : ''
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
               <PrimaryCTA href="/contact" className="ml-4">
                 Book a call
               </PrimaryCTA>
@@ -73,16 +80,21 @@ export function Header() {
               className="lg:hidden border-t border-sb-line bg-white"
             >
               <div className="container mx-auto px-4 py-6 space-y-4">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="block text-lg font-medium text-sb-ink hover:text-sb-orange py-2 focus:outline-none focus:ring-2 focus:ring-sb-orange rounded px-2"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+                {navItems.map((item) => {
+                  const isActive = pathname === item.href;
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={`block text-lg font-medium text-sb-ink hover:text-sb-orange py-2 focus:outline-none focus:ring-2 focus:ring-sb-orange rounded px-2 ${
+                        isActive ? 'border-2 border-sb-orange' : ''
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                })}
                 <div className="pt-4">
                   <PrimaryCTA href="/contact" className="w-full">
                     Book a call
