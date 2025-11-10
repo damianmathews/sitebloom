@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://sitester.io'),
   title: {
     default: `${config.siteName} - ${config.tagline}`,
     template: `%s | ${config.siteName}`,
@@ -38,6 +39,20 @@ export const metadata: Metadata = {
     siteName: config.siteName,
     title: config.tagline,
     description: config.description,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: config.siteName,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: config.tagline,
+    description: config.description,
+    images: ["/og-image.png"],
   },
 };
 
