@@ -9,6 +9,6 @@
   "features": {
     "localBusinessSchema": false,
     "calendlyPopup": true,
-    "buildTarget": "48-72 hours"
+    "buildTarget": "48 hours"
   }
 }

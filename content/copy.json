@@ -50,7 +50,7 @@
       ]
     },
     "howItWorks": {
-      "headline": "From call to live in days",
+      "headline": "From call to live in 48 hours",
       "steps": [
         {
           "number": "01",
@@ -83,14 +83,14 @@
       ]
     },
     "finalCta": {
-      "headline": "Ready to get more calls?",
+      "headline": "Ready to get more jobs?",
       "subheadline": "Book a 20-minute call. No pressure, just honest advice on what you need.",
       "cta": "Book a call"
     }
   },
   "howItWorks": {
     "headline": "Simple process, fast results",
-    "subheadline": "From first call to live site in 48-72 hours (configurable)",
+    "subheadline": "From first call to live site in 48 hours",
     "timeline": [
       {
         "title": "Discovery Call",
@@ -117,7 +117,7 @@
       },
       {
         "title": "Build",
-        "duration": "48-72 hours",
+        "duration": "48 hours",
         "description": "We build your site using proven templates customized for your business.",
         "details": [
           "Clean, professional design",

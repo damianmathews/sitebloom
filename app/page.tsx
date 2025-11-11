@@ -85,8 +85,7 @@ export default function HomePage() {
             {/* Subheadline with better spacing */}
             <MotionReveal delay={0.2}>
               <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                We build fast, clean sites that help local businesses<br />
-                get more calls and bookings.
+                We build fast, clean sites that help local businesses get more calls and bookings.
               </p>
             </MotionReveal>
 

@@ -33,7 +33,7 @@ export default function HowItWorksPage() {
             <Card key={index} className="rounded-3xl border-sb-line shadow-lg">
               <CardContent className="p-8">
                 <div className="flex items-start gap-6">
-                  <div className="shrink-0 w-12 h-12 rounded-full bg-sb-iris text-white flex items-center justify-center font-bold text-xl">
+                  <div className="shrink-0 w-12 h-12 rounded-full bg-sb-orange text-white flex items-center justify-center font-bold text-xl">
                     {index + 1}
                   </div>
                   <div className="flex-1">
@@ -41,7 +41,7 @@ export default function HowItWorksPage() {
                       <h3 className="text-2xl font-bold text-sb-ink">
                         {step.title}
                       </h3>
-                      <span className="text-sm font-semibold text-sb-iris bg-sb-cloud px-3 py-1 rounded-full inline-block mt-2 sm:mt-0">
+                      <span className="text-sm font-semibold text-sb-orange bg-sb-orange/10 px-3 py-1 rounded-full inline-block mt-2 sm:mt-0">
                         {step.duration}
                       </span>
                     </div>
@@ -51,7 +51,7 @@ export default function HowItWorksPage() {
                     <ul className="space-y-2">
                       {step.details.map((detail, i) => (
                         <li key={i} className="flex items-start gap-2 text-gray-700">
-                          <Check className="h-5 w-5 text-sb-mint shrink-0 mt-0.5" />
+                          <Check className="h-5 w-5 text-sb-orange shrink-0 mt-0.5" />
                           <span>{detail}</span>
                         </li>
                       ))}
@@ -73,7 +73,7 @@ export default function HowItWorksPage() {
             <ul className="space-y-4">
               {whatWeNeed.checklist.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <Check className="h-6 w-6 text-sb-mint shrink-0 mt-0.5" />
+                  <Check className="h-6 w-6 text-sb-orange shrink-0 mt-0.5" />
                   <span className="text-gray-700 text-lg">{item}</span>
                 </li>
               ))}
@@ -98,7 +98,7 @@ export default function HowItWorksPage() {
             </Card>
           ))}
         </div>
-        <Card className="max-w-3xl mx-auto rounded-3xl border-sb-iris border-2 bg-sb-cloud">
+        <Card className="max-w-3xl mx-auto rounded-3xl border-sb-orange border-2 bg-sb-orange/5">
           <CardContent className="p-6 text-center">
             <p className="text-gray-700 italic">{seoBasics.note}</p>
           </CardContent>
