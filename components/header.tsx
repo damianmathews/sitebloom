@@ -11,8 +11,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 const navItems = [
   { label: 'Home', href: '/' },
   { label: 'Pricing', href: '/pricing' },
+  { label: 'Resources', href: '/resources' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Work', href: '/work' },
-  { label: 'How it works', href: '/how-it-works' },
   { label: 'FAQ', href: '/faq' },
   { label: 'Contact', href: '/contact' },
 ];

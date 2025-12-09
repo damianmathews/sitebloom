@@ -9,11 +9,17 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Netlify Forms configuration
+# Enable form detection and processing
+[build.processing]
+  skip_processing = false
+
 # Netlify Forms detection
 # Forms are automatically detected during build when they include:
 # - data-netlify="true" attribute
 # - name attribute
 # - hidden input with name="form-name"
+# Static form definitions are in /public/forms.html for Next.js static exports
 
 # Security headers
 [[headers]]

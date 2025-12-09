@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hidden Forms for Netlify</title>
+  <!-- This file helps Netlify detect forms in statically exported Next.js sites -->
+</head>
+<body style="display: none;">
+  <!-- Contact Form -->
+  <form
+    name="contact"
+    method="POST"
+    action="/thanks/"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+  >
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="text" name="bot-field" />
+    <input type="text" name="name" required />
+    <input type="email" name="email" required />
+    <input type="tel" name="phone" required />
+    <select name="service-category" required>
+      <option value="">Select a category</option>
+      <option value="plumber">Plumber</option>
+      <option value="electrician">Electrician</option>
+      <option value="hvac">HVAC</option>
+      <option value="roofer">Roofer</option>
+      <option value="landscaper">Landscaper</option>
+      <option value="painter">Painter</option>
+      <option value="junk-removal">Junk Removal</option>
+      <option value="pest-control">Pest Control</option>
+      <option value="other">Other</option>
+    </select>
+    <textarea name="message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Resource Download Form (for lead magnets) -->
+  <form
+    name="resource-download"
+    method="POST"
+    action="/thanks/"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+  >
+    <input type="hidden" name="form-name" value="resource-download" />
+    <input type="text" name="bot-field" />
+    <input type="email" name="email" required />
+    <input type="hidden" name="resource" />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

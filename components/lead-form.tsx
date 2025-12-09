@@ -35,8 +35,9 @@ export function LeadForm({ formName = 'contact' }: LeadFormProps) {
       data-netlify-honeypot="bot-field"
       className="space-y-6"
     >
-      {/* Hidden input required by Netlify */}
+      {/* Hidden inputs required by Netlify */}
       <input type="hidden" name="form-name" value={formName} />
+      <input type="hidden" name="subject" value={`New ${formName} form submission from sitester.io`} />
 
       {/* Honeypot field for spam protection (hidden from users) */}
       <div className="hidden">
