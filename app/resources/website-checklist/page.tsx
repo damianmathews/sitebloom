@@ -62,10 +62,10 @@ export default function WebsiteChecklistPage() {
   const [submitted, setSubmitted] = useState(false);
   const [showFullChecklist, setShowFullChecklist] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    // In production, you'd send this to your email service
-    // For now, we'll just show the full checklist
+  const handleSubmit = (e: React.FormEvent) => {
+    // Form will be handled by Netlify Forms
+    // The form submission will redirect to success page
+    // We show the checklist immediately for better UX
     setSubmitted(true);
     setShowFullChecklist(true);
   };
@@ -155,9 +155,22 @@ export default function WebsiteChecklistPage() {
                     Get the Full Checklist (Free)
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Enter your email to download the complete PDF checklist you can print and use today.
+                    Enter your email to see the complete checklist. (We'll email you a PDF copy too!)
                   </p>
-                  <form onSubmit={handleSubmit} className="space-y-4">
+                  <form
+                    name="resource-download"
+                    method="POST"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                    onSubmit={handleSubmit}
+                    className="space-y-4"
+                  >
+                    <input type="hidden" name="form-name" value="resource-download" />
+                    <input type="hidden" name="resource" value="website-checklist" />
+                    <div className="hidden">
+                      <Label htmlFor="bot-field">Don't fill this out</Label>
+                      <Input id="bot-field" name="bot-field" />
+                    </div>
                     <div className="text-left">
                       <Label htmlFor="email" className="text-sb-ink font-medium mb-2 block">
                         Email Address
@@ -165,6 +178,7 @@ export default function WebsiteChecklistPage() {
                       <Input
                         id="email"
                         type="email"
+                        name="email"
                         placeholder="your@email.com"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
@@ -177,7 +191,7 @@ export default function WebsiteChecklistPage() {
                       className="w-full bg-sb-orange hover:bg-sb-orange/90 text-white font-semibold py-6 text-lg"
                     >
                       <Download className="w-5 h-5 mr-2" />
-                      Get Free Checklist
+                      Show Me the Checklist
                     </Button>
                     <p className="text-sm text-gray-500">
                       No spam, ever. Just this checklist and occasional helpful tips.
@@ -198,7 +212,7 @@ export default function WebsiteChecklistPage() {
                     Success! Here's Your Checklist
                   </h3>
                   <p className="text-green-700 mb-6">
-                    We've also emailed you a PDF copy to {email}
+                    Check your email - we've sent you a PDF copy at {email}
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Button
