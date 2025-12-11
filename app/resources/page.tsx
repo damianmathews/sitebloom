@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Section } from '@/components/ui/section';
 import { MotionReveal } from '@/components/ui/motion-reveal';
-import { Download, CheckCircle, Calculator, FileText, ArrowRight } from 'lucide-react';
+import { Download, Calculator, FileText, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Free Resources - Website Checklists & Tools for Local Businesses',
@@ -17,15 +17,6 @@ export const metadata: Metadata = {
 };
 
 const resources = [
-  {
-    id: 'website-checklist',
-    title: 'The Complete Website Checklist for Contractors',
-    description: 'Everything your website needs to turn visitors into paying customers. No fluff, just the 15 things that actually matter.',
-    icon: CheckCircle,
-    benefit: 'Stop wondering if your website is good enough',
-    slug: 'website-checklist',
-    type: 'PDF Checklist',
-  },
   {
     id: 'roi-calculator',
     title: 'Website ROI Calculator',
@@ -42,7 +33,7 @@ const resources = [
     icon: FileText,
     benefit: 'Learn from real winners and losers',
     slug: 'before-after-guide',
-    type: 'PDF Guide',
+    type: 'Visual Guide',
   },
 ];
 
@@ -74,7 +65,7 @@ export default function ResourcesPage() {
       {/* Resources Grid */}
       <Section background="cloud">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {resources.map((resource, index) => {
               const Icon = resource.icon;
               return (

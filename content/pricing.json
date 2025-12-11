@@ -1,106 +1,80 @@
 {
-  "headline": "Simple, monthly pricing",
-  "subheadline": "No surprises. Cancel anytime.",
+  "headline": "Simple, transparent pricing",
+  "subheadline": "One-time fee to get online. Optional maintenance to stay fresh.",
   "tiers": [
     {
-      "id": "standard",
-      "name": "Standard",
-      "description": "Great for established local businesses",
-      "price": "$15",
-      "period": "/month",
-      "setupFee": "$100 upfront",
+      "id": "static-site",
+      "name": "Static Site",
+      "description": "Everything you need to get online",
+      "price": "$100",
+      "period": "",
+      "setupFee": "One-time payment",
       "features": [
         "Up to 5 pages",
         "Contact form",
-        "Calendly booking widget",
         "Mobile responsive",
         "Basic SEO setup",
         "SSL certificate",
         "Photo galleries",
         "FAQ section",
-        "Standard monthly updates",
-        "Priority support"
+        "Hosting included"
       ],
       "cta": "Get Started",
       "popular": true
     },
     {
-      "id": "pro",
-      "name": "Pro",
-      "description": "For businesses ready to scale",
-      "price": "$30",
+      "id": "maintenance",
+      "name": "Maintenance",
+      "description": "Keep your site updated and supported",
+      "price": "$15",
       "period": "/month",
-      "setupFee": "$400 upfront",
+      "setupFee": "Cancel anytime",
       "features": [
-        "Up to 10 pages",
-        "Everything in Standard",
-        "Blog/News section",
-        "Lead magnet forms",
-        "Review showcase area",
-        "Service area pages",
-        "Advanced SEO",
-        "Custom integrations",
-        "Quarterly strategy calls",
-        "White-glove support"
+        "Monthly content updates",
+        "Priority support",
+        "Performance monitoring",
+        "Security updates",
+        "Minor design tweaks",
+        "Analytics review"
       ],
-      "cta": "Get Started",
+      "cta": "Add Maintenance",
       "popular": false
     }
   ],
   "comparison": {
     "categories": [
       {
-        "name": "Website Pages",
+        "name": "Website Basics",
         "features": [
           {
             "name": "Number of pages",
-            "standard": "Up to 5",
-            "pro": "Up to 10"
-          },
-          {
-            "name": "Blog/News",
-            "standard": false,
-            "pro": true
+            "static-site": "Up to 5",
+            "maintenance": "—"
           },
           {
             "name": "Photo galleries",
-            "standard": true,
-            "pro": true
-          }
-        ]
-      },
-      {
-        "name": "Lead Generation",
-        "features": [
+            "static-site": true,
+            "maintenance": "—"
+          },
           {
             "name": "Contact form",
-            "standard": true,
-            "pro": true
-          },
-          {
-            "name": "Calendly booking",
-            "standard": true,
-            "pro": true
-          },
-          {
-            "name": "Lead magnets",
-            "standard": false,
-            "pro": true
+            "static-site": true,
+            "maintenance": "—"
           }
         ]
       },
       {
-        "name": "Support & Updates",
+        "name": "Ongoing Support",
         "features": [
           {
-            "name": "Monthly updates",
-            "standard": "Standard",
-            "pro": "Premium"
+            "name": "Content updates",
+            "static-site": false,
+            "maintenance": "Monthly"
           },
           {
-            "name": "Strategy calls",
-            "standard": false,
-            "pro": "Quarterly"
+            "name": "Priority support",
+            "static-site": false,
+            "maintenance": true
           }
         ]
       }
